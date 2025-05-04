@@ -25,6 +25,13 @@ const Task = function (props){
         }
     }
 
+    const handleDelete = (tasl) => {
+        const remaining_task = taskList.filter((task) => {
+            return task !== tasl;
+        });
+        props.setTask(remaining_task);
+    }
+
     return(
         <div>
             {
@@ -44,7 +51,7 @@ const Task = function (props){
                                 </div>)
                                 :(<button onClick={() => handleEdit(task,id)}>Edit</button>)
                                 }
-                                <i className='fa fa-trash'></i>
+                                <i className='fa fa-trash' onClick={() => handleDelete(task)}></i>
                             </ul>
                         </div>
                     )
