@@ -4,7 +4,8 @@ const InputTask = function (props) {
     const [inputText, setInputText] = useState('');
 
     const handleSubmit = (e) => {
-        props.setTask([...props.task,inputText]);
+        const data = { id: new Date().getTime().toString(), taskitem: inputText, checked: false }
+        props.setTask([...props.task,data]);
         setInputText("");
         e.preventDefault();
     }
