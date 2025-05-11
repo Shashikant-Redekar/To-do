@@ -61,7 +61,7 @@ const Task = function (props){
 
     return(
         <div>
-            <div>
+            <div className='filter'>
                 <select value={filter} onChange={(e) => setFilter(e.target.value)}>
                     <option value='All'>All</option>
                     <option value='Completed'>Completed</option>

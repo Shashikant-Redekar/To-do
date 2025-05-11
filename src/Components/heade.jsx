@@ -1,3 +1,4 @@
+import '../Styling/header.scss';
 
 const Hea = function(){
     const date = new Date();
@@ -5,9 +6,9 @@ const Hea = function(){
         (date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`;
 
     return(
-        <div>
+        <div className="headAndToDo">
             <h1> To-Do List</h1>
-            <h3>{formatted}</h3>
+            <h3>Date:{formatted}</h3>
             <label>
                 <input type='checkbox'></input>
                 <span ></span>
