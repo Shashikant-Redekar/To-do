@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../Styling/footer.scss';
 
 const InputTask = function (props) {
     const [inputText, setInputText] = useState('');
@@ -12,9 +13,9 @@ const InputTask = function (props) {
 
 
     return(
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input type='text' value={inputText}
+        <div className="foot">
+            <form className='form' onSubmit={handleSubmit}>
+                <input className="inp" type='text' value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
                 ></input>
                 <button type="submit">submit</button>

@@ -1,0 +1,21 @@
+.foot{
+    padding: 20px 10px 20px 10px;
+    margin: 0 10px 10px 10px;
+    border-radius: 7px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #b5ead7;
+}
+
+.form{
+    display:flex;
+    align-items: center;
+    width: 100%;
+}
+
+.inp{
+    flex: 1;
+    box-sizing: border-box;
+}

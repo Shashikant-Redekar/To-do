@@ -2,4 +2,27 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #cdb4db;
+    color: #4a4a4a;
+    padding: 10px 0 10px 0;
+    margin: 10px 10px 0 10px;
+    border-radius: 7px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.todo{
+    padding: 10px;
+    margin: 0;
+}
+
+.date{
+    padding: 10px;
+    margin: 0;
+}
+
+.dt{
+    margin: 10px;
 }

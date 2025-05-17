@@ -7,10 +7,10 @@ const Hea = function(){
 
     return(
         <div className="headAndToDo">
-            <h1> To-Do List</h1>
-            <h3>Date:{formatted}</h3>
+            <h1 className='todo'> To-Do List</h1>
+            <h3 className='date'>Date:{formatted}</h3>
             <label>
-                <input type='checkbox'></input>
+                <input className='dt' type='checkbox'></input>
                 <span ></span>
             </label>
         </div>
