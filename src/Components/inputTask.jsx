@@ -15,10 +15,10 @@ const InputTask = function (props) {
     return(
         <div className="foot">
             <form className='form' onSubmit={handleSubmit}>
-                <input className="inp" type='text' value={inputText}
+                <input className="inp" type='text' value={inputText} placeholder="Add tasks..."
                 onChange={(e) => setInputText(e.target.value)}
                 ></input>
-                <button type="submit">submit</button>
+                <button className='submmit' type="submit">&#8593;</button>
             </form>
         </div>
     )

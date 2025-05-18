@@ -1,7 +1,106 @@
 .listOfTask{
-    display:flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: left;
+    padding: 10px;
+    margin: 0;
+    top: 20px;
+    width: 70%;
 }
 
 .filter{
     justify-self: right;
+    position: fixed;
+    right: 0;
+    padding-right: 20px;
+}
+
+.list{
+    position: absolute;
+    top: 90px;
+    bottom : 100px;
+    width: 96%;
+    overflow-y: auto;
+    margin: 10px;
+}
+
+.check{
+    margin: 10px;
+}
+
+.listItem{
+    margin: 10px;
+    min-width: 250px;
+    width: 100%;
+    font-family: "Caveat", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.edit{
+    font-family: "karla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    width: auto;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #02b49f;
+    color: white;
+    margin: 5px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.editInp{
+    margin: 10px;
+    min-width: 250px;
+    width:700px;
+    font-family: "Caveat", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 24px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 40px;
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    transition: border-color 0.2 ease-in-out;
+}
+
+.add{
+    font-family: "karla", sans-serif;
+    font-style: normal;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #02b49f;
+    color: white;
+    margin: 5px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.cancel{
+    font-family: "karla", sans-serif;
+    font-style: normal;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #c8a1de;
+    color: white;
+    margin: 5px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.addcancel{
+    display: flex;
+    justify-content: flex-start;
 }

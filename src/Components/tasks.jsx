@@ -60,7 +60,7 @@ const Task = function (props){
     }
 
     return(
-        <div>
+        <div className='list'>
             <div className='filter'>
                 <select value={filter} onChange={(e) => setFilter(e.target.value)} >
                     <option value='All'>All</option>
@@ -74,17 +74,17 @@ const Task = function (props){
                     return( 
                         <div key={id}>
                             <ul className="listOfTask">
-                                <input type='checkbox' checked={task.checked} onChange={() => toggleCheck(task.id)}></input>
-                                {editingIndex === task.id ? (<input type='text' value={editInput}
+                                <input className='check' type='checkbox' checked={task.checked} onChange={() => toggleCheck(task.id)}></input>
+                                {editingIndex === task.id ? (<input className='editInp' type='text' value={editInput}
                                 onChange={(e) => setEditInput(e.target.value)}
                                 onKeyDown={(e) => handleSubmitEnter(e,task.id)}></input>) 
-                                : (<p>{task.taskitem}</p>)}
+                                : (<p className='listItem'>{task.taskitem}</p>)}
                                 {editingIndex === task.id ?
-                                (<div>
-                                    <button onClick={() => handleSubmit(task.id)}>add</button>
-                                    <button onClick={() => handleCancel()}>cancel</button>
+                                (<div className='addcancel'>
+                                    <button className='add' onClick={() => handleSubmit(task.id)}>+</button>
+                                    <button className='cancel' onClick={() => handleCancel()}>X</button>
                                 </div>)
-                                :(<button onClick={() => handleEdit(task.taskitem,task.id)}>Edit</button>)
+                                :(<button className='edit' onClick={() => handleEdit(task.taskitem,task.id)}>Edit</button>)
                                 }
                                 <i className='fa fa-trash' onClick={() => handleDelete(task)}></i>
                             </ul>
@@ -94,17 +94,17 @@ const Task = function (props){
                         return( 
                             <div key={id}>
                                 <ul className="listOfTask">
-                                    <input type='checkbox' checked={task.checked} onChange={() => toggleCheck(task.id)}></input>
-                                    {editingIndex === task.id ? (<input type='text' value={editInput}
+                                    <input className='check' type='checkbox' checked={task.checked} onChange={() => toggleCheck(task.id)}></input>
+                                    {editingIndex === task.id ? (<input className='editInp' type='text' value={editInput}
                                     onChange={(e) => setEditInput(e.target.value)}
                                     onKeyDown={(e) => handleSubmitEnter(e,task.id)}></input>) 
-                                    : (<p>{task.taskitem}</p>)}
+                                    : (<p className='listItem'>{task.taskitem}</p>)}
                                     {editingIndex === task.id ?
-                                    (<div>
-                                        <button onClick={() => handleSubmit(task.id)}>add</button>
-                                        <button onClick={() => handleCancel()}>cancel</button>
+                                    (<div className='addcancel'>
+                                        <button className='add' onClick={() => handleSubmit(task.id)}>+</button>
+                                        <button className='cancel' onClick={() => handleCancel()}>X</button>
                                     </div>)
-                                    :(<button onClick={() => handleEdit(task.taskitem,task.id)}>Edit</button>)
+                                    :(<button className='edit' onClick={() => handleEdit(task.taskitem,task.id)}>Edit</button>)
                                     }
                                     <i className='fa fa-trash' onClick={() => handleDelete(task)}></i>
                                 </ul>
@@ -114,17 +114,17 @@ const Task = function (props){
                     return( 
                         <div key={id}>
                             <ul className="listOfTask">
-                                <input type='checkbox' checked={task.checked} onChange={() => toggleCheck(task.id)}></input>
-                                {editingIndex === task.id ? (<input type='text' value={editInput}
+                                <input className='check' type='checkbox' checked={task.checked} onChange={() => toggleCheck(task.id)}></input>
+                                {editingIndex === task.id ? (<input className='editInp' type='text' value={editInput}
                                 onChange={(e) => setEditInput(e.target.value)}
                                 onKeyDown={(e) => handleSubmitEnter(e,task.id)}></input>) 
-                                : (<p>{task.taskitem}</p>)}
+                                : (<p className='listItem'>{task.taskitem}</p>)}
                                 {editingIndex === task.id ?
-                                (<div>
-                                    <button onClick={() => handleSubmit(task.id)}>add</button>
-                                    <button onClick={() => handleCancel()}>cancel</button>
+                                (<div className='addcancel'>
+                                    <button className='add' onClick={() => handleSubmit(task.id)}>+</button>
+                                    <button className='cancel' onClick={() => handleCancel()}>X</button>
                                 </div>)
-                                :(<button onClick={() => handleEdit(task.taskitem,task.id)}>Edit</button>)
+                                :(<button className='edit' onClick={() => handleEdit(task.taskitem,task.id)}>Edit</button>)
                                 }
                                 <i className='fa fa-trash' onClick={() => handleDelete(task)}></i>
                             </ul>
