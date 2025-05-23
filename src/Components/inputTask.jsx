@@ -5,10 +5,15 @@ const InputTask = function (props) {
     const [inputText, setInputText] = useState('');
 
     const handleSubmit = (e) => {
-        const data = { id: new Date().getTime().toString(), taskitem: inputText, checked: false }
-        props.setTask([...props.task,data]);
-        setInputText("");
-        e.preventDefault();
+        if(inputText.trim() === '')
+        {
+            alert('Null input not accepted')
+        }else{
+            const data = { id: new Date().getTime().toString(), taskitem: inputText, checked: false }
+            props.setTask([...props.task,data]);
+            setInputText("");
+            e.preventDefault();
+        }
     }
 
 
