@@ -9,10 +9,6 @@ const Hea = function(){
         <div className="headAndToDo">
             <h1 className='todo'> To-Do List</h1>
             <h3 className='date'>Date:{formatted}</h3>
-            <label>
-                <input className='dt' type='checkbox'></input>
-                <span ></span>
-            </label>
         </div>
     )
 }

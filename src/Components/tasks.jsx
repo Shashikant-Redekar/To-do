@@ -119,7 +119,7 @@ const Task = function (props){
                                 {editingIndex === task.id ? (<input className='editInp' type='text' value={editInput}
                                 onChange={(e) => setEditInput(e.target.value)}
                                 onKeyDown={(e) => handleSubmitEnter(e,task.id)}></input>) 
-                                : (<p className='listItem'>{task.taskitem}</p>)}
+                                : (<p className={task.checked? "listItemC":"listItem"}>{task.taskitem}</p>)}
                                 {editingIndex === task.id ?
                                 (<div className='addcancel'>
                                     <button className='add' onClick={() => handleSubmit(task.id)}>+</button>

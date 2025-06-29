@@ -16,6 +16,12 @@
     font-style: normal;
 }
 
+.theme{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .todo{
     padding: 10px;
     margin: 0;
