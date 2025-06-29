@@ -142,7 +142,7 @@
 @media(max-width: 450px){
     .listItemC{
         margin: 10px;
-        min-width: 200px;
+        min-width: 220px;
         width: 100%;
         font-family: "Caveat", cursive;
         font-weight: 600;
@@ -152,12 +152,22 @@
     }
     .listItem{
         margin: 10px;
-        min-width: 200px;
+        min-width: 220px;
         width: 100%;
         font-family: "Caveat", cursive;
         font-weight: 600;
         font-style: normal;
         font-size: 24px;
-        text-decoration: line-through;
+    }
+    .listOfTask{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        justify-self: left;
+        padding: 7px;
+        margin: 0;
+        top: 20px;
+        width: 70%;
+        margin:5px;
     }
 }
